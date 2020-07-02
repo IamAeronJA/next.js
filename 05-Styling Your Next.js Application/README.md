@@ -9,5 +9,6 @@ You can also utilize in-line styles on JSX elements. In-line styles are generall
 * Modular styles are supported with `[component].module.css`
 * Modular styles help avoid conflicts by generating CSS class names
 * You can use the JavaScript `import` statement to parse CSS files as JS objects
+* Less and Sass are supported
 
-Join the [CBT Nuggets Slack community](https://community.cbtnuggets.com/hc/en-us/articles/360000363793-Joining-the-Slack-Learner-Community) NOW!
+Join the [CBT Nuggets Slack community](http://learn.gg/lc-ts)!

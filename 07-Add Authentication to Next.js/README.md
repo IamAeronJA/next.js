@@ -77,3 +77,5 @@ export default () => {
 In order to integrate your application with GitHub authentication, you'll need to create an OAuth application in the web interface.
 
 The application ID and secret key need to be configured in your `.env` file.
+
+Join the [CBT Nuggets Slack community](http://learn.gg/lc-ts)!

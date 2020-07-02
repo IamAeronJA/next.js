@@ -7,4 +7,6 @@ You simply create new page files, and the Next.js framework automatically picks 
 ## Learning Points
 
 * Pages can be statically generated or Server-Side Rendered (SSR)
-* 
+* Data can be injected into static pages at build time via `getStaticProps` and `getStaticPaths`
+
+Join the [CBT Nuggets Slack community](http://learn.gg/lc-ts)!

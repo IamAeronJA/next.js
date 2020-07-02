@@ -18,3 +18,4 @@ If you make a change to your project, it will automatically recompile the projec
 * `package.json` contains only a few dependencies for base projects
 * The `public` directory contains static assets (raster images, SVG, GLTF, CSS, JavaScript, etc.)
 
+Join the [CBT Nuggets Slack community](http://learn.gg/lc-ts)!

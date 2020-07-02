@@ -58,3 +58,5 @@ In this case, you must use the icon's name as a string, without the `fa` prefix.
 * You can easily import Font Awesome icons into your Next.js projects as a React components
 * Font Awesome SVGs scale well, as they are vector-based graphics
 * Font Awesome version 5 changed from a font-based implementation to an SVG-based implementation
+
+Join the [CBT Nuggets Slack community](http://learn.gg/lc-ts)!

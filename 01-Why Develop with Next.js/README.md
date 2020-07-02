@@ -15,3 +15,5 @@
 * Styling Next.js components and pages
 * Adding Font Awesome SVG icons to your Next.js pages
 * Add GitHub authentication to your Next.js application
+
+Join the [CBT Nuggets Slack community](http://learn.gg/lc-ts)!
