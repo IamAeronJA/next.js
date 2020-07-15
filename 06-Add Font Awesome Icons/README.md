@@ -8,7 +8,7 @@ In this module, we'll take a look at how to add [Font Awesome](https://www.npmjs
 First, you'll need to install several modules from NPM.
 
 ```
-npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+npm i --save @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons  @fortawesome/free-regular-svg-icons
 ```
 
 ## Using Font Awesome Icons
@@ -18,6 +18,12 @@ You can import Font Awesome icons into specific components, by importing the `Fo
 ```
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBeer } from '@fortawesome/free-solid-svg-icons'
+```
+
+Inside your component, you can reference the Font Awesome icon component using the following code:
+
+```
+<FontAwesomeIcon icon={faCoffee} />
 ```
 
 ## Build a Font Awesome Icon Library

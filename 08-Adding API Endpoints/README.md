@@ -67,7 +67,15 @@ What happens if someone issues the following request to your API?
 GET http://localhost:3090/project/100/101 
 ```
 
-In RESTful 
+In RESTful design, this wouldn't be a good option, however you could retrieve multiple project IDs using URL path segments.
+
+`[...projects].js`
+
+```
+export default (req, res) => {
+    
+}
+```
 
 ## Learning Points
 

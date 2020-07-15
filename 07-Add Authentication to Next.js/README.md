@@ -1,6 +1,6 @@
-Most applications need some kind of authentication mechanism to interact with data. In this module, we'll add authentication to a Next.js application.
+Most applications need some kind of authentication mechanism to interact with data. In this module, we'll add authentication to a Next.js application, using GitHub oAuth.
 
-Start by creating a new application:
+Start by creating a new Next.js application:
 
 ```
 npx create-next-app
@@ -13,9 +13,32 @@ npm i next-auth
 ```
 
 In order to specify environment variables, use the `dotenv` module. Make sure you add `.env` to your `.gitignore` file, as it often contains secrets.
+You can also use the built-in support for `.env.local` that [Next.js includes](https://nextjs.org/docs/basic-features/environment-variables).
 
 ```
 npm install dotenv
+```
+
+### (optional) Install MySQL package for login session persistence
+
+If you'd like support for a database backend, consider using MySQL. You can run a MySQL container image, although be aware that you should use MySQL version 5.7, as the `mysql` package doesn't support MySQL 8 at this time.
+If you try to use MySQL 8, you'll [receive an error](https://stackoverflow.com/questions/52609940/mysql-8-er-not-supported-auth-mode/52610643) regarding mismatched authentication between the client and server.
+
+```
+npm install mysql
+```
+
+Run a MySQL v5 container:
+
+```
+docker run --detach --interactive --tty --publish 3306:3306 --env MYSQL_ROOT_PASSWORD=nextjstesting123 --name mysql mysql:5
+```
+
+Next, execute a shell inside the container, and create a database to use with `next-auth`.
+
+```
+docker exec --interactive --tty mysql bash
+bash# mysql --password=nextjstesting123 --execute 'create database nextauth;'
 ```
 
 ### Configure the API route:
